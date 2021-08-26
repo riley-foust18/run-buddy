@@ -13,4 +13,4 @@ https://riley-foust18.github.io/run-buddy/index.html
 ## Contribution
 Made with ❤️ by Riley Foust
 
-### ©️2019 Run Buddy, Inc 
+### ©️2019 Run Buddy, Inc
