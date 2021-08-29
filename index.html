@@ -63,17 +63,21 @@
                     <!-- Yes/No box -->
                     <p>
                         Have you worked out with a trainer before?
-                        <input type="radio" name="trainer-confirm" id="trainer-yes"/>
-                        <label for="trainer-yes">Yes</label>
-                        <input type="radio" name="trainer-confirm" id="trainer-no"/>
-                        <label for="trainer-no">No</label>
+                        <span class="radio-wrapper">
+                          <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+                          <label for="trainer-yes">Yes</label>
+                        </span>
+                        <span class="radio-wrapper">
+                          <input type="radio" name="trainer-confirm" id="trainer-no"/>
+                          <label for="trainer-no">No</label>
+                        </span>
                     </p>
                     <!-- Checkbox element -->
                     <p>
-                        <label for="18-check">
-                            I acknowledge that I am at least 18 years of age.
-                        </label>
-                        <input type="checkbox" name="18-confirm" id="18-check"/>  
+                      <span class="checkbox-wrapper">
+                        <input type="checkbox" name="18-confirm" id="18-check"/>
+                        <label for="18-check">I acknowledge that I am at least 18 years of age.</label>
+                      </span>  
                     </p>
                     <!-- Button -->
                     <button type="submit">
@@ -106,6 +110,7 @@
             </h2>
           </div>
 
+          <!-- STEP 1 -->
           <div class="step">
             <h3>Step 1.</h3>
             <div class="step-info">
@@ -119,6 +124,7 @@
             </div>  
           </div>
 
+          <!-- STEP 2 -->
           <div class="step">
             <h3>Step 2.</h3>
             <div class="step-info">
@@ -132,6 +138,7 @@
             </div>  
           </div>
 
+          <!-- STEP 3 -->
           <div class="step">
             <h3>Step 3.</h3>
             <div class="step-info">
@@ -145,6 +152,7 @@
             </div>  
           </div>
 
+          <!-- STEP 4 -->
           <div class="step">
             <h3>Step 4.</h3>
             <div class="step-info">
