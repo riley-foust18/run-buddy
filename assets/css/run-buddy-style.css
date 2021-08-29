@@ -8,6 +8,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* HEADER STYLES */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -45,11 +46,14 @@ header nav ul li a{
     font-weight: lighter;
     font-size: 1.55vw;
 }
+/* END HEADER STYLES */
 
+/* ALL SECTIONS STYLE */
 section {
     padding: 60px;
 }
 
+/*HERO SECTION STYLES */
 .hero {
     background-image:url("../images/hero-bg.jpg");
     background-size: cover;
@@ -113,7 +117,29 @@ section {
 .hero-form label {
     margin: 0 5px;
 }
+/* END HERO SECTION STYLES */
 
+/* SECTION TITLE STYLES */
+.section-title {
+  font-size: 48px;
+  color: #024e76;
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+/* END SECTION TITLE STYLES */
+
+/* WHAT WE DO SECTION STYLES */
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -122,25 +148,9 @@ section {
     margin: 0 auto;
     text-align: center;
 }
+/* END WHAT WE DO STYLES */
 
-.section-title {
-    font-size: 48px;
-    color: #024e76;
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-}
-  
-.primary-border {
-    border-color: #fce138;
-}
-  
-.secondary-border {
-    border-color: #39a6b2;
-}
-
+/* WHAT YOU DO SECTION STYLES */
 .steps {
     background: #fce138;
 }
@@ -192,7 +202,9 @@ section {
   line-height: 1.5;
   color: #024e76;
 }
+/* END WHAT YOU DO STYLES */
 
+/* MEET THE TRAINERS */
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -230,7 +242,9 @@ section {
 .trainer-bio p {
     font-size: 17px;
 }
+/* END TRAINERS STYLES */
 
+/* REACH OUT STYLES */
 .contact {
     background: #024e76;
 }
@@ -248,6 +262,10 @@ section {
 .contact-info > * {
   flex: 1;
   margin: 15px;
+}
+
+.contact-info iframe {
+  height: 400px;
 }
 
 .contact-info div {
@@ -278,6 +296,7 @@ section {
   padding: 7px 15px;
   font-size: 16px;
   color: #024e76;
+  width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
 }
@@ -291,7 +310,9 @@ section {
   padding: 15px 0;
   font-size: 16px;
 }
+/* END REACH OUT STYLES */
 
+/* FOOTER STYLES */
 footer {
     display: flex;
     justify-content: space-between;
@@ -315,7 +336,9 @@ footer div {
 footer a {
     color: #024e76;
 }
+/* END FOOTER STYLES */
 
+/* UTILITIES */
 .text-left {
   text-align: left;
 }
@@ -328,14 +351,113 @@ footer a {
   display: flex;
 }
 
+/* MEDIA QUERY FOR SMALL DESKTOPS */
 @media screen and (max-width: 980px) {
-  
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta,
+  .hero-form {
+    width: 100%;
+  }
+
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+
+  .trainer {
+    flex: 0 70%;
+  }
+
+  .contact-info iframe {
+    flex: 1 100%;
+  }
 }
 
+/* MEDIA QUERY FOR TABLETS */
 @media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;
+  }
  
 }
 
+/* MEDIA QUERY FOR PHONES */
 @media screen and (max-width: 575px) {
-  
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
 }
